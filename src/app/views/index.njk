@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>TRADFORM</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="img/logo-aba.png">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+              
+        <link rel="stylesheet" href="css/tiny-slider.css"/> 
+
+        <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+
+    </head>
+
+    <body>
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <a class="logo" href="#">
+                    <img src="img/logo60h.png" height="60" class="logo-light-mode" alt="">
+                    <img src="img/logo60h.png" height="60" class="logo-dark-mode" alt="">
+                </a>
+                <div class="buy-button">
+                    <a href="#contato">
+                        <div class="btn btn-primary">Fale Conosco</div>
+                    </a>
+                </div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        
+                <div id="navigation">
+                    <ul class="navigation-menu">
+                        <li><a href="#" class="sub-menu-item">Início</a></li>
+                        <li><a href="#serviços" class="sub-menu-item">Serviços</a></li>
+                        <li><a href="#" class="sub-menu-item">Quem Somos</a></li>
+                        <li><a href="#" class="sub-menu-item">Blog</a></li>
+                        <li><a href="#contato" class="sub-menu-item">Contato</a></li>  
+                    </ul>
+                    <div class="buy-menu-btn d-none">
+                        <a href="#contato" class="btn btn-primary">Fale Conoscow</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="bg-half-170 pb-0 bg-light d-table w-100 overflow-hidden" style="background: url('images/shapes/shape2.png') top; z-index: 0;">
+            <div class="container">
+                <div class="row align-items-center mt-5 mt-sm-0">
+                    <div class="col-md-6">
+                        <div class="title-heading text-center text-md-start">
+                            <span class="badge rounded-pill bg-soft-primary">Trabalhos Acadêmicos</span>
+                            <h4 class="heading mb-3 mt-2">Problemas com o seu TCC?<!-- <span class="fw-bold"> trabalhos acadêmicos </span>? --></h4>
+                            <p class="text-muted mb-0 para-dark para-desc mx-auto ms-md-auto">Se você chegou até aqui saiba que podemos atender suas necessidades por um preço justo.</p>
+                            
+                            <div class="mt-4">
+                                <a href="javascript:void(0)" class="btn btn-primary">Faça um orçamento</a>
+                                <p class="text-muted mt-1 mb-0">*Não é necessário cartão de crédito</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                        <div class="freelance-hero position-relative">
+                            <div class="bg-shape position-relative">
+                                <img src="images/freelancer/freelancer.png" class="mx-auto d-block img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="serviços" class="section">        
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mt-4 pt-2">
+                        <ul class="nav nav-pills nav-justified flex-column bg-white rounded shadow p-3 mb-0 sticky-bar" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link rounded active" id="lista1" data-bs-toggle="pill" href="#developing" role="tab" aria-controls="developing" aria-selected="false">
+                                    <div class="text-start d-flex align-items-center justify-content-between py-1 px-2">
+                                        <h6 class="mb-0"><i class="uil uil-postcard me-2 h5"></i> Tradução</h6>
+                                        <i class="uil uil-angle-right-b"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li class="nav-item mt-2">
+                                <a class="nav-link rounded" id="lista2" data-bs-toggle="pill" href="#data-analise" role="tab" aria-controls="data-analise" aria-selected="false">
+                                    <div class="text-start d-flex align-items-center justify-content-between py-1 px-2">
+                                        <h6 class="mb-0"><i class="uil uil-notes me-2 h5"></i> Matemática</h6>
+                                        <i class="uil uil-angle-right-b"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li class="nav-item mt-2">
+                                <a class="nav-link rounded" id="lista3" data-bs-toggle="pill" href="#security" role="tab" aria-controls="security" aria-selected="false">
+                                    <div class="text-start d-flex align-items-center justify-content-between py-1 px-2">
+                                        <h6 class="mb-0"><i class="uil uil-folder-check me-2 h5"></i> Escrita de Trabalhos Acadêmicos</h6>
+                                        <i class="uil uil-angle-right-b"></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-8 col-12 mt-4 pt-2">
+                        <div class="tab-content" id="pills-tabContent">
+
+                            <div class="tab-pane fade bg-white show active p-4 rounded shadow" id="developing" role="tabpanel" aria-labelledby="lista1">
+                                <h4 class="mb-4">Titulo 1</h4>
+                                <p class="text-muted mb-0">
+                                    - Trabalhamos com Tradução e Transcrição de textos nos pares de idiomas Português/Inglês. <br>
+                                    * Geral: CV, e-mails, artigos, livros, apostilas, revistas.<br>
+                                    * Comercial: contratos, ofertas, documentos de licitação.<br>
+                                    * Técnico: instruções de montagem / operação, manuais técnicos, relatórios de dados técnicos.<br>
+                                    * Revisão: Revisão e correção de textos já traduzidos.<br>
+                                    </p>
+                                                           
+
+                                <div class="mt-4">
+                                    <a href="javascript:void(0)" class="text-primary h6">Titulo âncora Link<i class="uil uil-angle-right-b align-middle"></i></a>
+                                </div>
+
+                                <div class="mt-4">
+                                    <img src="img/image.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane fade bg-white p-4 rounded shadow" id="data-analise" role="tabpanel" aria-labelledby="lista2">
+                                <h4 class="mb-4">Titulo 2</h4>
+                                <p class="text-muted mb-0">- Resolução de trabalhos, listas e problemas matemáticos do ensino básico ao ensino superior.</p>
+                                                           
+
+                                <div class="mt-4">
+                                    <a href="javascript:void(0)" class="text-primary h6">Titulo âncora Link<i class="uil uil-angle-right-b align-middle"></i></a>
+                                </div>
+
+                                <div class="mt-4">
+                                    <img src="img/image.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade bg-white p-4 rounded shadow" id="security" role="tabpanel" aria-labelledby="lista3">
+                                <h4 class="mb-4">Titulo 3</h4>
+                                <p class="text-muted mb-0">
+                                    - Possuímos ampla experiência no desenvolvimento e escrita de pesquisas de delineamento quantitativo e qualitativo. As áreas de atuação que atendemos para a escrita de trabalhos são: saúde, educação e matemática.<br><br>
+                                    Para sua segurança os trabalhos escritos acompanham relatório de programas renomados para detectar plágio!<br><br>
+                                    - Áreas de atuação: Matemática, Educação, Engenharias, Enfermagem e demais áreas de saúde.<br><br>
+                                    Especialidades: 
+                                    Artigo científico
+                                    Trabalho de Conclusão de Curso
+                                    </p>
+                                                           
+
+                                <div class="mt-4">
+                                    <a href="javascript:void(0)" class="text-primary h6">Titulo âncora Link<i class="uil uil-angle-right-b align-middle"></i></a>
+                                </div>
+
+                                <div class="mt-4">
+                                    <img src="img/image.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section bg-light" style="background: url('images/shapes/shape2.png') center center;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title mb-4 pb-2 text-center">
+                            <h4 class="title mb-4">Avaliações de quem contratou:</h4>
+                            <p class="text-muted para-desc mx-auto mb-0">nota <span class="text-primary fw-bold">4.87 </span> 
+                                <ul class="list-unstyled mb-0">
+                                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 mt-4">
+                        <div class="tiny-three-item">
+
+                            <div class="tiny-slide">
+                                <div class="d-flex client-testi m-1">
+                                    <img src="images/client/01.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
+                                    <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        </ul>
+                                        <p class="text-muted mt-2">" O profissional é excelente, atendeu com rapidez, atenção e solucionou o problema. Recomendo! "</p>
+                                        <h6 class="text-primary">- Bernardo Fernandez <small class="text-muted">/ São Paulo</small></h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tiny-slide">
+                                <div class="d-flex client-testi m-1">
+                                    <img src="images/client/01.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
+                                    <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        </ul>
+                                        <p class="text-muted mt-2">" O profissional é excelente, atendeu com rapidez, atenção e solucionou o problema. Recomendo! "</p>
+                                        <h6 class="text-primary">- Bernardo Fernandez <small class="text-muted">/ São Paulo</small></h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tiny-slide">
+                                <div class="d-flex client-testi m-1">
+                                    <img src="images/client/01.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
+                                    <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        </ul>
+                                        <p class="text-muted mt-2">" O profissional é excelente, atendeu com rapidez, atenção e solucionou o problema. Recomendo! "</p>
+                                        <h6 class="text-primary">- Bernardo Fernandez <small class="text-muted">/ São Paulo</small></h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tiny-slide">
+                                <div class="d-flex client-testi m-1">
+                                    <img src="images/client/01.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
+                                    <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        </ul>
+                                        <p class="text-muted mt-2">" O profissional é excelente, atendeu com rapidez, atenção e solucionou o problema. Recomendo! "</p>
+                                        <h6 class="text-primary">- Bernardo Fernandez <small class="text-muted">/ São Paulo</small></h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tiny-slide">
+                                <div class="d-flex client-testi m-1">
+                                    <img src="images/client/01.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
+                                    <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        </ul>
+                                        <p class="text-muted mt-2">" O profissional é excelente, atendeu com rapidez, atenção e solucionou o problema. Recomendo! "</p>
+                                        <h6 class="text-primary">- Bernardo Fernandez <small class="text-muted">/ São Paulo</small></h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tiny-slide">
+                                <div class="d-flex client-testi m-1">
+                                    <img src="images/client/01.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
+                                    <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        </ul>
+                                        <p class="text-muted mt-2">" O profissional é excelente, atendeu com rapidez, atenção e solucionou o problema. Recomendo! "</p>
+                                        <h6 class="text-primary">- Bernardo Fernandez <small class="text-muted">/ São Paulo</small></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container mt-100 mt-60">
+                <div class="row justify-content-center">
+                    <div id="contato" class="col-12 text-center">
+                        <div class="section-title mb-4 pb-2">
+                            <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">Faça um orçamento grátis!</h4>
+                            <p class="text-muted para-desc mb-0 mx-auto" data-aos="fade-up" data-aos-duration="1400">Nossa equipe está pronta para sanar suas dúvidas. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-5 col-12 mt-4 pt-2">
+                        <img src="images/customer/customer.svg" data-aos="fade-up" data-aos-duration="1400" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-6 col-md-7 col-12 mt-4 pt-2">
+                        <div class="card rounded shadow border-0 ms-lg-4" data-aos="fade-up" data-aos-duration="1400">
+                            <div class="card-body p-4">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Seu nome :</label>
+                                                <div class="form-icon position-relative">
+                                                    <i data-feather="user" class="fea icon-sm icons"></i>
+                                                    <input name="name" id="name" type="text" class="form-control ps-5" placeholder="Seu nome :">
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Seu email :</label>
+                                                <div class="form-icon position-relative">
+                                                    <i data-feather="mail" class="fea icon-sm icons"></i>
+                                                    <input name="email" id="email" type="email" class="form-control ps-5" placeholder="Seu email :">
+                                                </div>
+                                            </div> 
+                                        </div>
+        
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label class="form-label">Telefone/Whatsapp</label>
+                                                <input name="text" id="email" type="text" class="form-control ps-5" placeholder="">
+                                            </div>
+                                        </div>
+                                        
+                                      
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label class="form-label">Descrição :</label>
+                                                <div class="form-icon position-relative">
+                                                    <i data-feather="message-circle" class="fea icon-sm icons"></i>
+                                                    <textarea name="comments" id="comments" rows="4" class="form-control ps-5" placeholder="Descreva em que podemos ajudar"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+        
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <input type="submit" id="submit" name="send" class="btn btn-primary" value="Submit">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                        <a href="#" class="logo-footer">
+                            <img src="img/logo.png" height="30" alt="">
+                        </a>
+                        <p class="mt-4 text-muted">ossos profissionais são devidamente qualificados, com formação e experiência na área de atuação. Entre em contato conosco, solicite um orçamento personalizado e garanta qualidade e originalidade para seus trabalhos.</p>
+                        <ul class="list-unstyled social-icon social mb-0 mt-4">
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h5 class="text-dark footer-head">Companhia</h5>
+                        <ul class="list-unstyled footer-list mt-4">
+                            <li><a href="#" class="text-muted"><i class="uil uil-angle-right-b me-1"></i> Sobre nós</a></li>
+                            <li><a href="#" class="text-muted"><i class="uil uil-angle-right-b me-1"></i> Serviços</a></li>
+                            <li><a href="#" class="text-muted"><i class="uil uil-angle-right-b me-1"></i> Equipe</a></li>
+                            <li><a href="#" class="text-muted"><i class="uil uil-angle-right-b me-1"></i> Blog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h5 class="text-dark footer-head">Links úteis</h5>
+                        <ul class="list-unstyled footer-list mt-4">
+                            <li><a href="#" class="text-muted"><i class="uil uil-angle-right-b me-1"></i> Link 1</a></li>
+                            <li><a href="#" class="text-muted"><i class="uil uil-angle-right-b me-1"></i> Link 2</a></li>
+                            <li><a href="#" class="text-muted"><i class="uil uil-angle-right-b me-1"></i> Link 3</a></li>
+                            <li><a href="#" class="text-muted"><i class="uil uil-angle-right-b me-1"></i> Link 4</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h5 class="text-dark footer-head">Boletim de Notícias</h5>
+                        <p class="mt-4 text-muted">Inscreva-se e receba as últimas dicas por e-mail.</p>
+                        <form>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="foot-subscribe mb-3">
+                                        <label class="form-label">Escreva seu e-mail <span class="text-danger">*</span></label>
+                                        <div class="form-icon position-relative">
+                                            <i data-feather="mail" class="fea icon-sm text-dark icons"></i>
+                                            <input type="email" name="email" id="emailsubscribe" class="form-control ps-5 rounded bg-light border text-muted" placeholder="Seu email : " required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="d-grid">
+                                        <input type="submit" id="submitsubscribe" name="send" class="btn btn-soft-primary" value="Se inscrever">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer class="footer footer-bar">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="text-sm-start">
+                            <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> TRADFORM <i class="mdi mdi-heart text-danger"></i> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+        
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/tiny-slider.js "></script>
+        <script src="js/feather.min.js"></script>
+        <script src="js/plugins.init.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
