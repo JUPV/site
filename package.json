@@ -2,15 +2,16 @@
   "name": "site",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "nodemon src/server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "nodemailer": "^6.6.3",
     "nunjucks": "^3.2.3"
   },
   "devDependencies": {
