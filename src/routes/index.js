@@ -13,25 +13,23 @@ routes.get('/email', (req, res) => {
     //let testAccount = await nodemailer.createTestAccount();
   
     // create reusable transporter object using the default SMTP transport
-    let transporter = nodemailer.createTransport({
-      host: "imap.titan.email",
+    var transport = nodemailer.createTransport({
+      host: "smtp.titan.email",
       port: 465,
-      secure: true, // true for 465, false for other ports
       auth: {
-        user: "contato@miniraiz.com", // generated ethereal user
-        pass: "@Guto1402", // generated ethereal password
-      },
+        user: "contato@miniraiz.com",
+        pass: "@Guto1402"
+      }/* ,tls: { rejectUnauthorized: false} */
     });
   
     // send mail with defined transport object
-    let info = await transporter.sendMail({
+    let info = await transport.sendMail({
       from: '"Mini Raiz 👻" <contato@miniraiz.com>', // Endereço do remetente
       to: "gutembergsouzadejesus@gmail.com, contato@miniraiz.com, paulapclima37@gmail.com", // lista de receptores
       subject: "Hello ✔", // Subject line
       text: "Hello world?", // plain text body
       html: "<b>Hello world?</b>", // html body
     });
-  
     console.log("Message sent: %s", info.messageId);
     
   }
