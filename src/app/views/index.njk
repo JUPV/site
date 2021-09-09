@@ -352,14 +352,14 @@
                     <div class="col-lg-6 col-md-7 col-12 mt-4 pt-2">
                         <div class="card rounded shadow border-0 ms-lg-4" data-aos="fade-up" data-aos-duration="1400">
                             <div class="card-body p-4">
-                                <form>
+                                <form  action="/contato-email" method="post">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="mb-3">
                                                 <label class="form-label">Seu nome :</label>
                                                 <div class="form-icon position-relative">
                                                     <i data-feather="user" class="fea icon-sm icons"></i>
-                                                    <input name="name" id="name" type="text" class="form-control ps-5" placeholder="Seu nome :">
+                                                    <input name="nome" type="text" class="form-control ps-5" placeholder="Seu nome :">
                                                 </div>
                                             </div>
                                         </div>
@@ -369,7 +369,7 @@
                                                 <label class="form-label">Seu email :</label>
                                                 <div class="form-icon position-relative">
                                                     <i data-feather="mail" class="fea icon-sm icons"></i>
-                                                    <input name="email" id="email" type="email" class="form-control ps-5" placeholder="Seu email :">
+                                                    <input name="email" type="email" class="form-control ps-5" placeholder="Seu email :">
                                                 </div>
                                             </div> 
                                         </div>
@@ -377,7 +377,7 @@
                                         <div class="col-md-12">
                                             <div class="mb-3">
                                                 <label class="form-label">Telefone/Whatsapp</label>
-                                                <input name="text" id="email" type="text" class="form-control ps-5" placeholder="">
+                                                <input name="telefone" type="text" class="form-control ps-5" placeholder="(99) 9 9999-9999" onkeydown="Mask.apply(this, 'telefone')">
                                             </div>
                                         </div>
                                         
@@ -387,7 +387,7 @@
                                                 <label class="form-label">Descrição :</label>
                                                 <div class="form-icon position-relative">
                                                     <i data-feather="message-circle" class="fea icon-sm icons"></i>
-                                                    <textarea name="comments" id="comments" rows="4" class="form-control ps-5" placeholder="Descreva em que podemos ajudar"></textarea>
+                                                    <textarea name="descricao" rows="4" class="form-control ps-5" placeholder="Descreva em que podemos ajudar"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -396,7 +396,7 @@
         
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <input type="submit" id="submit" name="send" class="btn btn-primary" value="Submit">
+                                            <input type="submit" class="btn btn-primary" value="Submit">
                                         </div>
                                     </div>
                                 </form>
@@ -446,7 +446,8 @@
                     <div class="col-lg-4 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <h5 class="text-dark footer-head">Boletim de Notícias</h5>
                         <p class="mt-4 text-muted">Inscreva-se e receba as últimas dicas por e-mail.</p>
-                        <form>
+
+                        <form action="/contato-email" method="post">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="foot-subscribe mb-3">
@@ -459,6 +460,7 @@
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="d-grid">
+                                        {# <button type="submit" class="btn btn-soft-primary" value="Se inscrever"></button> #}
                                         <input type="submit" id="submitsubscribe" name="send" class="btn btn-soft-primary" value="Se inscrever">
                                     </div>
                                 </div>
@@ -487,5 +489,6 @@
         <script src="js/feather.min.js"></script>
         <script src="js/plugins.init.js"></script>
         <script src="js/app.js"></script>
+        <script src="/script/scripts.js"></script>
     </body>
 </html>
